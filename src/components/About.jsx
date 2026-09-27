@@ -17,12 +17,28 @@ const About = () => {
               <p key={index}>{paragraph}</p>
             ))}
             
-            <div className="pt-6 flex gap-4">
+            <div className="pt-6 flex flex-wrap gap-4">
               <a 
-                href={`mailto:${aboutData.personalInfo.email}`} 
+                href={aboutData.personalInfo.resumeUrl} 
+                target="_blank" 
+                rel="noreferrer"
                 className="bg-blue-600 text-white px-6 py-2 rounded-md hover:bg-blue-500 transition font-medium"
               >
-                Email Me
+                View Resume
+              </a>
+              <a 
+                href={`mailto:${aboutData.personalInfo.email}`} 
+                className="bg-gray-800 text-white border border-gray-700 px-6 py-2 rounded-md hover:bg-gray-700 transition font-medium"
+              >
+                Email
+              </a>
+              <a 
+                href={aboutData.personalInfo.linkedin} 
+                target="_blank" 
+                rel="noreferrer"
+                className="bg-gray-800 text-white border border-gray-700 px-6 py-2 rounded-md hover:bg-gray-700 transition font-medium"
+              >
+                LinkedIn
               </a>
               <a 
                 href={aboutData.personalInfo.github} 

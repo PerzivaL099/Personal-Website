@@ -4,6 +4,8 @@ export const aboutData = {
     title: "Junior Software Engineer", 
     email: "mario152003@gmail.com", 
     github: "https://github.com/PerzivaL099", 
+    linkedin: "https://www.linkedin.com/in/mario-estrada-sanchez",
+    resumeUrl: "/Personal-Website/resume.pdf"
   },
   bio: [
     "I am a Junior Software Engineer with a strong foundation in computer science architecture and hands-on experience in full-stack development and cloud systems.",
